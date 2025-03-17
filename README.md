@@ -34,11 +34,11 @@ npx cypress open
 ```
 Run a particular test with terminal in headless mode, on a chrome browser - **Runs the test completely in terminal**
 ```bash
-npx cypress run --headless --browser chrome --spec cypress/e2e/EGB - Happy Path/ITOP1/{FileName}.feature
+npx cypress run --headless --browser chrome --spec cypress/e2e/{FileName}.feature
 ```
 Run a particular test with terminal in headed mode, on a chrome browser - **Chrome window will open up showing test process**
 ```bash
-npx cypress run --headed --browser chrome --spec cypress/e2e/EGB - Happy Path/ITOP1/{FileName}.feature
+npx cypress run --headed --browser chrome --spec cypress/e2e/{FileName}.feature
 ```
 Run all tests with terminal in headless mode, on a chrome browser - **Runs the test completely in terminal**
 ```bash
@@ -50,7 +50,7 @@ npx cypress run --headed --browser chrome
 ```
 Change browser type e.g. to run headed tests in firefox - **Browser needs to be installed to run it**
 ```bash
-npx cypress run --headed --browser firefox --spec cypress/e2e/EGB - Happy Path/ITOP1/{FileName}.feature
+npx cypress run --headed --browser firefox --spec cypress/e2e/{FileName}.feature
 ```
 **Alternatively you can run any of these steps in package.json by pressing the play button**
 
