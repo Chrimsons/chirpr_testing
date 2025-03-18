@@ -9,12 +9,12 @@ class My_first_chirp_PO{
     newChirpElements = {
         newChirpTextBox: () => cy.get('[placeholder="Go on have a chirp"]'),
         sendButton: () => cy.contains('button', 'Send'),
-        pictureUploadButton: () => cy.contains('input', 'Media')
+        // pictureUploadButton: () => cy.contains('input', 'Media')
     }
 
     assertions = {
         accountNameHeading: () => cy.get('h2'),
-        usernameHeading: () => cy.contains('p', '.text-sm opacity-60'),
+        // usernameHeading: () => cy.contains('p', '.text-sm opacity-60'),
         newArticle: () => cy.get("article").eq(0),
         assertNewestPostUsername: () => this.assertions.newArticle().get('a'),
         assertNewestPostMessage: () => this.assertions.newArticle().get('p')
