@@ -34,13 +34,6 @@ viewportWidth: 1920,
     video: true,
     specPattern: "**/*.feature",
     setupNodeEvents,
-    cucumberPreprocessor: {
-        stepDefinitions: "cypress/e2e/support/step-definitions/*.js",
-        html: {
-            enabled: true,
-            output: "cypress/reports/cucumber-html/cucumber-report.html"
-            }
-        }
 },
 
 });
