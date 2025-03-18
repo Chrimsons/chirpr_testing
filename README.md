@@ -22,8 +22,7 @@ IntelliJ
 - Gherkin: Required.
 - Cucumber +: Recommended.
 
-
-  Visual Studio Code
+Visual Studio Code
 - Cucumber (Gherkin) Full Support: Required
 
 ## Usage
