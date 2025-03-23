@@ -35,9 +35,5 @@ module.exports = defineConfig({
       specPattern: "**/*.feature",
       setupNodeEvents,
 },
-    projectId: 'xxxxx',
-    screenshotsFolder: './cypress/screenshots',
-    video: false,
-    videosFolder: './cypress/videos',
 
 });
