@@ -24,16 +24,20 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-
   e2e: {
-    baseUrl: 'https://www.chirpr.au/login',
-viewportWidth: 1920,
-    viewportHeight: 1080,
-    screenshotOnRunFailure: true,
-    // chromeWebSecurity: false,
-    video: true,
-    specPattern: "**/*.feature",
-    setupNodeEvents,
+      baseUrl: 'https://www.chirpr.au/login',
+      experimentalRunAllSpecs: true,
+      viewportWidth: 1920,
+      viewportHeight: 1080,
+      screenshotOnRunFailure: true,
+      // chromeWebSecurity: false,
+      video: true,
+      specPattern: "**/*.feature",
+      setupNodeEvents,
 },
+    projectId: 'xxxxx',
+    screenshotsFolder: './cypress/screenshots',
+    video: false,
+    videosFolder: './cypress/videos',
 
 });
